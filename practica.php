@@ -30,5 +30,39 @@ $mul = 4*3;
 $div =2/4;
 var_dump($res);
 var_dump($div);
+
+
 $num=0;
+$num +=1; 
+echo $num++;
+echo ++$num;
+
+$num /= $float;
+
+//strings
+
+$num = 5;
+$varString ='$num \n';
+echo $varString;
+$varString="el valor de la variable num= $num \n";
+echo $varString;
+$otroString ="otra forma de incluir variables {$num} \n";
+echo $otroString;
+$otroString2= "otra 2 forma de incluir variables $${num} \n";
+echo $otroString2;
+$stringMult =<<<'END'
+Multi Line
+string
+END;
+echo $stringMult."\n";
+echo 'Este es un'.'String'."\n";
+echo 'multiples'."\n",'parametros'."\n",'en echo'."\n";
+
+//constantes
+
+
+define("FOO","algo" );
+echo FOO;
+echo "Este es el valor de la constante FOO =".FOO;
+
 
