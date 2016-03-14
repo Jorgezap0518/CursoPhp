@@ -50,3 +50,25 @@ $trimmed =trim ($str,"HdWr");
 echo $trimmed;
 echo "\n";
 
+//logica
+$a_0;
+$b='0';
+$c='1';
+$d='1';
+
+assert($a==$b);
+
+//assert($a===$b);
+assert ($c!=$a); //true
+assert ($c<>$a); // true
+assert ($a<$c);//true
+assert ($c>$b);// true
+assert ($a<=$b); // true
+assert ($c>=$d); // true
+
+assert ($c===$d);
+assert ($a !==$d);
+assert (1===1);
+assert(1!== '1');
+
+assert (round($x + $y,1) == $z);
