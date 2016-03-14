@@ -1,1 +1,52 @@
+<?php
+
+// Algunas funciones de strings
+$str="Hola Mundo, ya no esta nevando";
+print_r(explode(" ",$str));
+
+
+// money_Format  formatos moneda
+
+echo "$".money_format("%i", 1000)."\n";
+echo "$".money_format ("%i", 1000.50)."\n";
+
+//str_replace 
+
+$vocales = array("a","e","i","o","u");
+$soloConsonantes = str_replace($vocales,"","Hola Mundo");
+echo $soloConsonantes."\n";
+
+
+$frase= "You Should eat fruits, vegetables, and fiber everyday.";
+$healthy = array("fruits","vegetables","fiber");
+$yumm=array("pizza","beer","ice cream");
+
+$nuevafrase=str_replace($healthy, $yumm,$frase);
+echo $nuevafrase."\n";
+
+//Hash crypt
+
+$password = "admin123";
+$hash= crypt($password,"admin123=95ExemMPISNtY
+"); //Clave privada
+
+echo $password."=".$hash."\n";
+
+//md5
+
+$str = 'apple';
+if(md5($str)=='admin123=95ExemMPISNtY
+'){
+echo "Bien Encriptado";
+
+}
+
+$str ="    Prueba de string con espacios      ";
+echo trim($str);
+echo "\n";
+
+$str = "Hello World";
+$trimmed =trim ($str,"HdWr");
+echo $trimmed;
+echo "\n";
 
